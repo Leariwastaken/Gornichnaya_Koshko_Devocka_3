@@ -1,0 +1,103 @@
+.accordeons{
+    margin: 10vw 15vw;
+    text-align: center;
+    .accordeons_h{
+        color: #1D7293;
+        font-weight: 700;
+        font-size: 2vw;
+        margin-bottom: 2vh;
+    }
+    .accordeons_t{
+        font-weight: 600;
+        color: #073141;
+        font-size: 1.4vw;
+        line-height: 1.6vw;
+        margin-bottom: 6vh;
+    }
+    .accordeons_acs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 3vw;
+        .accordeon_ac{
+            .ac_head{
+                font-size: 1.6vw;
+                color: #073141;
+                font-weight: 500;
+                background-color: #B9D6E1;
+                padding: 1vw 10vw;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #1D7293;
+                }
+            }
+            .ac_head__active{
+                color: #fff;
+                background-color: #073141;
+            }
+            .ac_block{
+                max-height: 0;
+                margin-top: 2vw;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    margin-bottom: 2vw;
+                }
+            }
+            .ac_block__active{
+                opacity: 1;
+                overflow: visible;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1080px) {
+    
+}
+@media screen and (max-width: 768px) {
+    .accordeons{
+        margin: 10vw 10vw;
+        .accordeons_h{
+            font-size: 3vw;
+        }
+        .accordeons_t{
+            font-size: 2vw;
+            line-height: 2.5vw;
+        }
+        .accordeons_acs{
+            .accordeon_ac{
+                .ac_head{
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 426px) and (min-width: 320px){
+    .accordeons{
+        margin: 10vw 5vw;
+        .accordeons_h{
+            font-size: 5vw;
+        }
+        .accordeons_t{
+            font-size: 4vw;
+            line-height: 5vw;
+        }
+        .accordeons_acs{
+            flex-direction: column;
+            .accordeon_ac{
+                .ac_head{
+                    font-size: 4vw;
+                    padding: 2vw 8vw;
+                }
+            }
+        }
+    }
+}

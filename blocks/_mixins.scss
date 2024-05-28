@@ -1,0 +1,57 @@
+%but{
+    background-color: #1D7293;
+    font-size: 1.6vw;
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 600;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    &:hover{
+        background-color: #fff;
+        color: #1D7293;
+        border: #1D7293 solid 2px;
+    }
+}
+%butw{
+    background-color: #fff;
+    font-size: 1.6vw;
+    color: #1D7293;
+    border: #1D7293 solid 2px;
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 200px;
+    font-weight: 600;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    &:hover {
+        background-color: #1D7293;
+        color: #fff;
+    }
+}
+@media screen and (max-width: 1080px) {
+
+}
+@media screen and (max-width: 768px) {
+    %but{
+        font-size: 2.3vw;
+        padding: 1.5vw 3vw 1.5vw 3vw;
+    }
+    %butw{
+        font-size: 2.3vw;
+        padding: 1.5vw 3vw 1.5vw 3vw;
+    }
+}
+@media screen and (max-width: 426px) and (min-width: 320px){
+    %but{
+        font-size: 4vw;
+        padding: 2.5vw 3vw 2.5vw 3vw;
+    }
+    %butw{
+        font-size: 4vw;
+        padding: 2.5vw 3vw 2.5vw 3vw;
+    }
+}
